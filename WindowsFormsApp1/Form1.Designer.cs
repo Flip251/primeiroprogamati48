@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtsoma = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.multi = new System.Windows.Forms.Button();
+            this.div = new System.Windows.Forms.Button();
+            this.subtracao = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // txtsoma
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(501, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtsoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoma.Location = new System.Drawing.Point(501, 231);
+            this.txtsoma.Name = "txtsoma";
+            this.txtsoma.Size = new System.Drawing.Size(45, 39);
+            this.txtsoma.TabIndex = 0;
+            this.txtsoma.Text = "+";
+            this.txtsoma.UseVisualStyleBackColor = true;
+            this.txtsoma.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -66,35 +66,38 @@
             this.textBox1.Size = new System.Drawing.Size(122, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // button5
+            // multi
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(603, 231);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 39);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "x";
-            this.button5.UseVisualStyleBackColor = true;
+            this.multi.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multi.Location = new System.Drawing.Point(603, 231);
+            this.multi.Name = "multi";
+            this.multi.Size = new System.Drawing.Size(45, 39);
+            this.multi.TabIndex = 6;
+            this.multi.Text = "x";
+            this.multi.UseVisualStyleBackColor = true;
+            this.multi.Click += new System.EventHandler(this.multi_Click);
             // 
-            // button6
+            // div
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(654, 231);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(45, 39);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "/";
-            this.button6.UseVisualStyleBackColor = true;
+            this.div.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.div.Location = new System.Drawing.Point(654, 231);
+            this.div.Name = "div";
+            this.div.Size = new System.Drawing.Size(45, 39);
+            this.div.TabIndex = 7;
+            this.div.Text = "/";
+            this.div.UseVisualStyleBackColor = true;
+            this.div.Click += new System.EventHandler(this.div_Click);
             // 
-            // button7
+            // subtracao
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(552, 231);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 39);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "-";
-            this.button7.UseVisualStyleBackColor = true;
+            this.subtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtracao.Location = new System.Drawing.Point(552, 231);
+            this.subtracao.Name = "subtracao";
+            this.subtracao.Size = new System.Drawing.Size(45, 39);
+            this.subtracao.TabIndex = 8;
+            this.subtracao.Text = "-";
+            this.subtracao.UseVisualStyleBackColor = true;
+            this.subtracao.Click += new System.EventHandler(this.subtracao_Click);
             // 
             // textBox2
             // 
@@ -117,12 +120,12 @@
             this.ClientSize = new System.Drawing.Size(1202, 484);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.subtracao);
+            this.Controls.Add(this.div);
+            this.Controls.Add(this.multi);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtsoma);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -132,12 +135,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button txtsoma;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button multi;
+        private System.Windows.Forms.Button div;
+        private System.Windows.Forms.Button subtracao;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
     }
