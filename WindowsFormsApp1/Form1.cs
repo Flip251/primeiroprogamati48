@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -16,13 +17,33 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        decimal resultado;
+        decimal valor1;
+        decimal valor2;
+        string operacao = "Adicao";
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            resultado = 0;
+            valor1 = 0;
+            valor2 = 0;
+        }
+
+        //variaveis
+
+
+
+        //Operações
         private void button1_Click(object sender, EventArgs e)
         {
-            double soma1 = double.Parse(textBox1.Text);
-            double soma2 = double.Parse(textBox2.Text);
-            double resultado = soma1 + soma2;
-            textBox3.Text = resultado.ToString();
+            operacao == "Adicao";
+
+            if (operacao == "Adicao")
+            {
+                textBox3.Text = valor1.ToString() + " + ";
+            }
+
+            textBox1.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,26 +53,81 @@ namespace WindowsFormsApp1
 
         private void subtracao_Click(object sender, EventArgs e)
         {
-            double sub1 =double.Parse(textBox1.Text);
-            double sub2 =double.Parse(textBox2.Text);
-            double resultado = sub1 - sub2;
-            textBox3.Text = resultado.ToString();
+            
         }
 
         private void multi_Click(object sender, EventArgs e)
         {
-            double mult1 = double.Parse(textBox1.Text);
-            double mult2 = double.Parse(textBox2.Text); 
-            double resultado = mult1 * mult2;
-            textBox3.Text = resultado.ToString();
+            
         }
 
         private void div_Click(object sender, EventArgs e)
         {
-            double div1 = double.Parse(textBox1.Text);
-            double div2 = double.Parse(textBox2.Text);
-            double resultado = div1 / div2;
-            textBox3.Text = resultado.ToString();
+           
+        }
+
+
+        //numeros
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text += "1";
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "2";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "3";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "4";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "5";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "6";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "7";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "8";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "9";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+        }
+
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            decimal resultado = 0;
+            decimal valor1 = 0;
+            decimal valor2 = 0;
         }
     }
 }
